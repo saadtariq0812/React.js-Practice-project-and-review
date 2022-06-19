@@ -1,6 +1,25 @@
-import Header from './components/Header'
-import Tasks from "./components/Tasks"
-import { useState } from "react";
+//import Header from './components/Header'
+//import Tasks from "./components/Tasks"
+//import { useState } from "react";
+
+import React from 'react'
+import Navbar from './components/Navbar';
+import Main from './components/Main';
+
+
+function App() {
+  return (
+    <div className = 'container'>
+      <Navbar />
+      <Main />
+    </div>
+    )
+    
+}
+ 
+export default App;
+
+
 /*
 function App() {
   return (
@@ -14,6 +33,7 @@ function App() {
   */
  
  /*
+
  function App() {
    
    const x = true;
@@ -58,15 +78,23 @@ function App() {
           
          
          
-         function App() {
+        
+        //PropTypes are rules to tell what data type a param/prop should be
+        //1: import proptypes
+        //2: set componentName.proptype = {
+          //  title : propTypes.string
+          //}
 
+
+          /*
+        
           const [tasks, setTasks] = useState( [
             {
               id : 1,
               text : "saad's appointment",
               day : "Dec 8th, 2:30 pm",
               reminder : true
-    
+        
             },
             {
               id : 12,
@@ -75,22 +103,14 @@ function App() {
               reminder : true
             }
           ])
-
-
+        
+        
            return (
              <div className="container">
                 <Header title = 'Anihelp'/>
                 <Tasks tasks = {tasks}/>
-     
+        
               </div>
-  );
-}
-
-export default App;
-
-
-//PropTypes are rules to tell what data type a param/prop should be
-//1: import proptypes
-//2: set componentName.proptype = {
-//  title : propTypes.string
-//}
+        );
+        
+        */
